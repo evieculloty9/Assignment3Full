@@ -179,6 +179,15 @@ public class ColourTest {
         Assertions.assertEquals(col1, col2); // assertion values equal
     }
 
+    // test for when they have the same value com
+    @Test
+    public void sameEqualsTest() {
+        Colour col = new Colour(1.0, 1.0, 1.0);
+        Assertions.assertEquals(col, col); // assertion values equal
+    }
+}
+
+
 
 
 
