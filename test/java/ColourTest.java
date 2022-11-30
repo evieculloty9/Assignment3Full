@@ -10,3 +10,9 @@ public class ColourTest {
         Colour col = new Colour(0.0, 0.0, 0.0);
         Assertions.assertEquals(0, col.getRed());
     }
+
+    @Test
+    public void greenThreeArgsConstructorZerosTest() {
+        Colour col = new Colour(0.0, 0.0, 0.0);
+        Assertions.assertEquals(0, col.getGreen());
+    }
