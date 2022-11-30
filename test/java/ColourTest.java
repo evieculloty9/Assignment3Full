@@ -73,6 +73,12 @@ public class ColourTest {
         Assertions.assertTrue(Colour.MAX_COMP_VALUE * (1.0 + r) / 2 >= col.getRed()); // Asserting that the assertion is true
     }
 
+    @Test
+    public void redOneArgsConstructorZerosTest() {
+        Colour col = new Colour(0);
+        Assertions.assertEquals(0, col.getRed());
+    }
+
 
 
 
