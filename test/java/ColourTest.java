@@ -121,7 +121,17 @@ public class ColourTest {
         int value = r + (Colour.MAX_COMP_VALUE + 1) * g + (Colour.MAX_COMP_VALUE + 1) * (Colour.MAX_COMP_VALUE + 1) * b;
         Colour col = new Colour(value);
         Assertions.assertEquals(r, col.getRed());
-
+    }
+    @Test
+    public void greenOneArgsConstructorCommonTest() {
+        Random random = new Random(1);
+        int r = random.nextInt(Colour.MAX_COMP_VALUE + 1);
+        int g = random.nextInt(Colour.MAX_COMP_VALUE + 1);
+        int b = random.nextInt(Colour.MAX_COMP_VALUE + 1);
+        int value = r + (Colour.MAX_COMP_VALUE + 1) * g + (Colour.MAX_COMP_VALUE + 1) * (Colour.MAX_COMP_VALUE + 1) * b;
+        Colour col = new Colour(value);
+        Assertions.assertEquals(g, col.getGreen());
+    }
 
 
 
