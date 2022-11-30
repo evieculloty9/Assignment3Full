@@ -105,6 +105,13 @@ public class ColourTest {
         Assertions.assertEquals(Colour.MAX_COMP_VALUE, col.getRed());
     }
 
+    @Test
+    public void blueOneArgsConstructorOnesTest() {
+        int value = (Colour.MAX_COMP_VALUE + 1) * (Colour.MAX_COMP_VALUE + 1) * (Colour.MAX_COMP_VALUE + 1) - 1;
+        Colour col = new Colour(value);
+        Assertions.assertEquals(Colour.MAX_COMP_VALUE, col.getRed());
+    }
+
 
 
 
