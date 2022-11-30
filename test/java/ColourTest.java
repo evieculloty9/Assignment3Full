@@ -28,3 +28,9 @@ public class ColourTest {
         Colour col = new Colour(1.0, 1.0, 1.0);
         Assertions.assertEquals(Colour.MAX_COMP_VALUE, col.getRed());
     }
+
+    @Test
+    public void greenThreeArgsConstructorOnesTest() {
+        Colour col = new Colour(1.0, 1.0, 1.0);
+        Assertions.assertEquals(Colour.MAX_COMP_VALUE, col.getGreen());
+    }
