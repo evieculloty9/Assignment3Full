@@ -79,6 +79,12 @@ public class ColourTest {
         Assertions.assertEquals(0, col.getRed());
     }
 
+    @Test
+    public void greenOneArgsConstructorZerosTest() {
+        Colour col = new Colour(0);
+        Assertions.assertEquals(0, col.getGreen());
+    }
+
 
 
 
