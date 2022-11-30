@@ -165,6 +165,13 @@ public class ColourTest {
         Assertions.assertNotEquals(col1, col2);
     }
 
+    @Test
+    public void blueDifferEqualsTest() {
+        Colour col1 = new Colour(1.0, 1.0, 1.0);
+        Colour col2 = new Colour(1.0, 1.0, 0.5);
+        Assertions.assertNotEquals(col1, col2);
+    }
+
 
 
 
