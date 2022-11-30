@@ -144,6 +144,13 @@ public class ColourTest {
         Assertions.assertEquals(b, col.getBlue());
     }
 
+    @Test
+    public void allDifferEqualsTest() {
+        Colour col1 = new Colour(1.0, 1.0, 1.0);
+        Colour col2 = new Colour(0.5, 0.5, 0.5);
+        Assertions.assertNotEquals(col1, col2);
+    }
+
 
 
 
