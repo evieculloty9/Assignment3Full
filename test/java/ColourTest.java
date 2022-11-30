@@ -62,6 +62,17 @@ public class ColourTest {
         Assertions.assertTrue(Colour.MAX_COMP_VALUE * (1.0 + g) / 2 >= col.getGreen()); // Asserting that the expression is true
     }
 
+    @Test
+    public void blueThreeArgsConstructorCommonTest() {
+        Random random = new Random(1);
+        double r = random.nextDouble();
+        double g = random.nextDouble();
+        double b = random.nextDouble();
+        Colour col = new Colour(r, g, b);
+        Assertions.assertTrue(Colour.MAX_COMP_VALUE * r / 2 <= col.getRed());
+        Assertions.assertTrue(Colour.MAX_COMP_VALUE * (1.0 + r) / 2 >= col.getRed()); // Asserting that the assertion is true
+    }
+
 
 
 
